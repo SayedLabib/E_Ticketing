@@ -84,6 +84,8 @@ function updateGrandTotal(applied)
 
 
 
+
+
 // Making The Apply Button enable
 function applyBtn()
 {
@@ -100,3 +102,17 @@ function applyBtn()
 }
 
 document.getElementById('coupon-code').addEventListener('keyup', applyBtn);
+
+
+function hideElement(elementID)
+{
+   const element = document.getElementById(elementID);
+   elementID = element.classList.add('hidden');
+}
+
+function showElement(elementID)
+{
+    const element = document.getElementById(elementID);
+    elementID = element.classList.remove('hidden');
+}
+

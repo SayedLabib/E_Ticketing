@@ -69,6 +69,20 @@ for(const seats of allSeats)
   const btnApply = document.getElementById('Apply-btn').setAttribute('disabled',false);  
  
   
+  function showNextPage()
+  {
+   hideElement('header');
+   hideElement('main');
+   hideElement('footer');
+   showElement('Success');
+  }
 
+  function showPreviousPage()
+  {
+   hideElement('Success');
+   showElement('header');
+   showElement('main');
+   showElement('footer');
+  }
 
    

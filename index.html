@@ -18,7 +18,7 @@
 
 <body class="">
 
-    <header class="container lg:mx-auto">
+    <header id="header" class="container lg:mx-auto">
          <!-- nav bar section -->
 
          <div class="navbar bg-base-100 justify-between font-raleway">
@@ -161,7 +161,7 @@
 </header>
 
     
-<main>
+<main id="main">
 
       <!-- Best offer Section -->
   
@@ -579,7 +579,7 @@
                     <p class="mt-5 font-semibold text-[16px] text-black">Email ID</p>
                     <input class="mt-5 w-[380px] lg:w-[550px] h-[55px] border-2 border-gray-300 rounded-2xl" type="text" placeholder="    Enter your email id">
                     
-                    <button class="btn mt-5 bg-[#1DD100] w-[380px] lg:w-[550px] h-[60px] rounded-lg font-raleway font-extrabold text-xl text-white">Next</button>
+                    <button onclick="showNextPage()" class="btn mt-5 bg-[#1DD100] w-[380px] lg:w-[550px] h-[60px] rounded-lg font-raleway font-extrabold text-xl text-white">Next</button>
 
                     <div class="mt-5 mr-6 lg:mr-0 font-inter text-[16px] text-[#03071299] flex flex-row justify-evenly">
                       <p class="border-b-2 border-gray-400">Terms and Conditions</p>
@@ -600,12 +600,43 @@
 
 </main>
 
- 
+<!-- Success Section -->
+
+<section id="Success" class=" min-h-screen hidden bg-[#F2F1F1] ">
+   
+  <div class="min-h-screen flex justify-center items-center">
+      
+    <div class="w-[718px] h-[480px] bg-white drop-shadow-md rounded-lg">
+     
+      <div class="mt-10 flex flex-col justify-center items-center gap-10">
+        <img src="images/success.png" alt="">
+        <h1 class="font-bold text-[24px] text-[#27AE60]">SUCCESS</h1>
+      </div>
+      
+      <div class="mt-10 text-center">
+        <p class="font-medium text-[20px]">Thank you for Booking Our Bus Seats.</p>
+        <p class="font-medium text-[20px]">We are working hard to find the best service and deals for you.  
+        </p>
+        <p class="font-light text-[20px]">Shortly you will find a confirmation in your email.</p>
+      </div>
+
+      <div class="text-center mt-7  ">
+        <!-- <button type="btn" class="btn-lg bg-[#27AE60]">Continue</button> -->
+         <button onclick="showPreviousPage()" class="btn btn-lg bg-[#27AE60] font-semibold text-[20px] text-white w-[300px] h-[55px] rounded-full">Continue</button>
+      </div>
+      
+       
+    </div>
+
+  </div>
+  
+
+</section> 
 
 
 
 
-<footer class="p-10 bg-[#030712] mt-[1850px] lg:mt-32">
+<footer id="footer" class="p-10 bg-[#030712] mt-[1850px] lg:mt-32">
   
   
   <section class="container lg:mx-auto">
