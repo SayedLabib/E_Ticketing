@@ -1,5 +1,6 @@
 // console.log('Connected');
 
+
 const allSeats = document.getElementsByClassName('kbd-lg'); 
 
 let seatCount = 0;
@@ -50,7 +51,8 @@ for(const seats of allSeats)
        event.target.classList.add('disabled');
       //  event.target.style.pointerEvents = 'none';
        event.target.style.backgroundColor = '#1DD100';
-
+       
+       updateTotalPrice(price); 
       }
 
             
@@ -58,10 +60,15 @@ for(const seats of allSeats)
       
       UpdateSeatCount();
       UpdateSeatLeft();
-       
-
-       
-       
+      updateGrandTotal();
 
        })
     }
+
+
+  const btnApply = document.getElementById('Apply-btn').setAttribute('disabled',false);  
+ 
+  
+
+
+   
